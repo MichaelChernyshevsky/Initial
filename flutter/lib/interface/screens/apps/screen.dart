@@ -1,5 +1,5 @@
 import 'package:app_with_apps/constants/exports/exports.dart';
-import 'package:app_with_apps/constants/localization/text.dart';
+import 'package:app_with_apps/constants/localization/app_localization.dart';
 import 'package:app_with_apps/constants/models/notes/folder_class.dart';
 import 'package:app_with_apps/constants/models/state_enum.dart';
 import 'package:app_with_apps/interface/screens/apps/widgets/mainbody_widget.dart';
@@ -43,7 +43,7 @@ class _ScreenState extends State<Screen> {
         context: context,
         builder: (context) {
           return AlertDialog(
-            title: Text(ConstantText.creation),
+            title: Text(AppLocalizations.current.success),
             content: TextField(
               onChanged: (value) {
                 setState(() {
@@ -54,7 +54,7 @@ class _ScreenState extends State<Screen> {
             ),
             actions: <Widget>[
               MaterialButton(
-                child: Text(ConstantText.ok),
+                child: Text(AppLocalizations.current.success),
                 onPressed: () => setState(() {
                   createFolder(valueText);
                   newFolder_title = valueText;
@@ -75,7 +75,7 @@ class _ScreenState extends State<Screen> {
           actions: [
             ElevatedButton(
               onPressed: showCreation,
-              child: Text(ConstantText.create),
+              child: Text(AppLocalizations.current.success),
             ),
           ],
         ),

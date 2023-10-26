@@ -1,5 +1,5 @@
 import 'package:app_with_apps/constants/exports/exports.dart';
-import 'package:app_with_apps/constants/localization/text.dart';
+import 'package:app_with_apps/constants/localization/app_localization.dart';
 import 'package:app_with_apps/interface/routes/app_routes.dart';
 
 class Apps extends StatelessWidget {
@@ -16,7 +16,7 @@ class Apps extends StatelessWidget {
             ElevatedButton(
                 onPressed: () =>
                     Navigator.of(context).pushNamed(AppRoutes.screen),
-                child: Text(ConstantText.notes)),
+                child: Text(AppLocalizations.current.success),),
           ],
         ),
       ),
