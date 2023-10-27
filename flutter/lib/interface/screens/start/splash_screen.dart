@@ -1,4 +1,4 @@
-import 'package:app_with_apps/constants/exports/exports.dart';
+import 'package:app_with_apps/core/constants/exports/exports.dart';
 import 'package:app_with_apps/interface/routes/app_routes.dart';
 
 class SplashScreen extends StatefulWidget {

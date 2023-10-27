@@ -1,5 +1,5 @@
-import 'package:app_with_apps/constants/exports/exports.dart';
-import 'package:app_with_apps/interface/screens/apps/screen.dart';
+import 'package:app_with_apps/core/constants/exports/exports.dart';
+import 'package:app_with_apps/interface/screens/common/screen.dart';
 import 'package:app_with_apps/interface/screens/appsList.dart';
 import 'package:app_with_apps/interface/screens/start/splash_screen.dart';
 

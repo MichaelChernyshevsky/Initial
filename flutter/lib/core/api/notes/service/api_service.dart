@@ -1,7 +1,7 @@
-import 'package:app_with_apps/api/notes/connections/folder_api.dart';
-import 'package:app_with_apps/api/notes/connections/note_api.dart';
-import 'package:app_with_apps/constants/models/notes/folder_class.dart';
-import 'package:app_with_apps/constants/models/notes/note_class.dart';
+import 'package:app_with_apps/core/api/notes/connections/folder_api.dart';
+import 'package:app_with_apps/core/api/notes/connections/note_api.dart';
+import 'package:app_with_apps/core/constants/models/notes/folder_class.dart';
+import 'package:app_with_apps/core/constants/models/notes/note_class.dart';
 
 class ServiceApiNotes {
   final FolderApi _folderApi = FolderApi();

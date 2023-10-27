@@ -1,5 +1,5 @@
-import 'package:app_with_apps/constants/exports/exports.dart';
-import 'package:app_with_apps/constants/localization/app_localization.dart';
+import 'package:app_with_apps/core/constants/exports/exports.dart';
+import 'package:app_with_apps/core/constants/localization/app_localization.dart';
 import 'package:app_with_apps/interface/routes/app_routes.dart';
 
 class Apps extends StatelessWidget {
@@ -8,15 +8,16 @@ class Apps extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('')),
+      appBar: AppBar(title: Text(AppLocalizations.current.appName)),
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
             ElevatedButton(
-                onPressed: () =>
-                    Navigator.of(context).pushNamed(AppRoutes.screen),
-                child: Text(AppLocalizations.current.success),),
+              onPressed: () =>
+                  Navigator.of(context).pushNamed(AppRoutes.screen),
+              child: Text(AppLocalizations.current.appName),
+            ),
           ],
         ),
       ),

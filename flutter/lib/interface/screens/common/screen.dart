@@ -1,9 +1,8 @@
-import 'package:app_with_apps/constants/exports/exports.dart';
-import 'package:app_with_apps/constants/localization/app_localization.dart';
-import 'package:app_with_apps/constants/models/notes/folder_class.dart';
-import 'package:app_with_apps/constants/models/state_enum.dart';
-import 'package:app_with_apps/interface/screens/apps/widgets/mainbody_widget.dart';
-import 'package:app_with_apps/manager/bloc/bloc.dart';
+import 'package:app_with_apps/core/constants/exports/exports.dart';
+import 'package:app_with_apps/core/constants/localization/app_localization.dart';
+import 'package:app_with_apps/core/constants/models/notes/folder_class.dart';
+import 'package:app_with_apps/core/constants/models/state_enum.dart';
+import 'package:app_with_apps/core/manager/bloc/bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class Screen extends StatefulWidget {
@@ -43,7 +42,7 @@ class _ScreenState extends State<Screen> {
         context: context,
         builder: (context) {
           return AlertDialog(
-            title: Text(AppLocalizations.current.success),
+            title: Text(AppLocalizations.current.appName),
             content: TextField(
               onChanged: (value) {
                 setState(() {
@@ -54,7 +53,7 @@ class _ScreenState extends State<Screen> {
             ),
             actions: <Widget>[
               MaterialButton(
-                child: Text(AppLocalizations.current.success),
+                child: Text(AppLocalizations.current.appName),
                 onPressed: () => setState(() {
                   createFolder(valueText);
                   newFolder_title = valueText;
@@ -75,7 +74,7 @@ class _ScreenState extends State<Screen> {
           actions: [
             ElevatedButton(
               onPressed: showCreation,
-              child: Text(AppLocalizations.current.success),
+              child: Text(AppLocalizations.current.appName),
             ),
           ],
         ),
@@ -87,10 +86,7 @@ class _ScreenState extends State<Screen> {
               setState(() {});
             }
           },
-          child: MainBody(
-            elements: elements,
-            state: state,
-          ),
+          child: Text(AppLocalizations.current.empty),
         ));
   }
 }

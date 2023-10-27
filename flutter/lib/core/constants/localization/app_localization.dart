@@ -1,7 +1,7 @@
 // ignore_for_file: lines_longer_than_80_chars, prefer_constructors_over_static_methods
 
-import 'package:app_with_apps/constants/exports/exports.dart';
-import 'package:app_with_apps/constants/localization/intl/messages_all_locales.dart';
+import 'package:app_with_apps/core/constants/exports/exports.dart';
+import 'package:app_with_apps/core/constants/localization/intl/messages_all_locales.dart';
 import 'package:intl/intl.dart';
 
 class AppLocalizations {
@@ -31,7 +31,8 @@ class AppLocalizations {
   }
 
   // hiden
-  String get success => Intl.message('success');
+  String get appName => Intl.message('App');
+  String get empty => Intl.message('');
 }
 
 class AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

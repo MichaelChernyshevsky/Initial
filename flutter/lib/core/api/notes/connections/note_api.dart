@@ -1,7 +1,7 @@
 import 'dart:convert';
-import 'package:app_with_apps/constants/models/notes/note_class.dart';
+import 'package:app_with_apps/core/constants/models/notes/note_class.dart';
 import 'package:http/http.dart' as http;
-import 'package:app_with_apps/constants/uri.dart';
+import 'package:app_with_apps/core/constants/uri.dart';
 import 'package:http/http.dart';
 
 class NoteApi {

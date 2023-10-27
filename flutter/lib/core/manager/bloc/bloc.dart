@@ -1,5 +1,5 @@
 // ignore_for_file: invalid_use_of_visible_for_testing_member
-import 'package:app_with_apps/api/notes/service/api_service.dart';
+import 'package:app_with_apps/core/api/notes/service/api_service.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
