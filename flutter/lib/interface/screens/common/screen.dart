@@ -25,7 +25,7 @@ class _ScreenState extends State<Screen> {
     super.initState();
   }
 
-  getData(List<Folder> arr) {
+  void getData(List<Folder> arr) {
     if (arr.isNotEmpty) {
       elements = arr;
       state = AppState.loaded;
@@ -34,7 +34,7 @@ class _ScreenState extends State<Screen> {
     }
   }
 
-  createFolder(title) => _bloc!.add(CreateFolderEvent(title: title));
+  void createFolder(String title) => _bloc!.add(CreateFolderEvent(title: title));
 
   Future<void> _displayTextInputDialog(BuildContext context) async {
     String valueText = '';
