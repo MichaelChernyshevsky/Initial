@@ -1,4 +1,0 @@
-enum ElementNote {
-  folder,
-  note,
-}

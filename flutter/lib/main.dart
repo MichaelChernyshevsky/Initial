@@ -1,9 +1,9 @@
-import 'package:app_with_apps/core/constants/exports/exports.dart';
-import 'package:app_with_apps/core/constants/localization/app_localization.dart';
+import 'package:app_with_apps/core/localization/app_localization.dart';
 import 'package:app_with_apps/core/manager/bloc/bloc.dart';
 import 'package:app_with_apps/core/manager/get.it/app_provider.dart';
 import 'package:app_with_apps/core/manager/provider/ordinaryProvider.dart';
 import 'package:app_with_apps/interface/routes/app_routes.dart';
+import 'package:flutter/material.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -15,8 +15,8 @@ void main() {
 
   runApp(
     MultiBlocProvider(
-      providers: [
-        BlocProvider<SomeBloc>(create: (context) => SomeBloc()),
+      providers: const [
+        // BlocProvider<SomeBloc>(create: (context) => SomeBloc()),
       ],
       child: MultiProvider(
         providers: [

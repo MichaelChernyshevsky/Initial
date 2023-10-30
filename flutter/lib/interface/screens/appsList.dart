@@ -1,5 +1,5 @@
-import 'package:app_with_apps/core/constants/exports/exports.dart';
-import 'package:app_with_apps/core/constants/localization/app_localization.dart';
+import 'package:app_with_apps/core/exports/exports.dart';
+import 'package:app_with_apps/core/localization/app_localization.dart';
 import 'package:app_with_apps/interface/routes/app_routes.dart';
 
 class Apps extends StatelessWidget {
