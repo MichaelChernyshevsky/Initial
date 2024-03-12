@@ -1,27 +1,13 @@
-import 'package:app_with_apps/ui/localization/app_localization.dart';
-import 'package:app_with_apps/manager/get.it/app_provider.dart';
-import 'package:app_with_apps/manager/provider/ordinaryProvider.dart';
-import 'package:app_with_apps/ui/routes/app_routes.dart';
-import 'package:flutter/material.dart';
+import 'package:app_with_apps/exports.dart';
 
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:get_it/get_it.dart';
-import 'package:provider/provider.dart';
-
-void main() {
+Future<void> main() async {
   GetIt.I.registerSingleton<AppProvider>(AppProvider());
 
-  runApp(
-    MultiBlocProvider(
-      providers: const [
-        // BlocProvider<SomeBloc>(create: (context) => SomeBloc()),
-      ],
-      child: MultiProvider(
-        providers: [
-          ChangeNotifierProvider(
-            create: (_) => OrdinaryProvider(),
-          ),
+  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]).then(
+    (_) => runApp(
+      MultiBlocProvider(
+        providers: const [
+          // BlocProvider<SomeBloc>(create: (context) => SomeBloc()),
         ],
         child: const MyApp(),
       ),

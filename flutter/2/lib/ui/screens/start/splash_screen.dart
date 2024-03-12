@@ -1,7 +1,4 @@
-import 'dart:async';
-
-import 'package:app_with_apps/ui/routes/app_routes.dart';
-import 'package:flutter/material.dart';
+import 'package:app_with_apps/exports.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

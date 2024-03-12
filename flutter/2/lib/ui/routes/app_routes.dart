@@ -1,7 +1,4 @@
-import 'package:app_with_apps/ui/screens/common/screen.dart';
-import 'package:app_with_apps/ui/screens/appsList.dart';
-import 'package:app_with_apps/ui/screens/start/splash_screen.dart';
-import 'package:flutter/material.dart';
+import 'package:app_with_apps/exports.dart';
 
 class AppRoutes {
   static const String splashScreen = '/splash_screen';

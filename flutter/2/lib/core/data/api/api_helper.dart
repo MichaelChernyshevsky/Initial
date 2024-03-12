@@ -1,4 +1,4 @@
-import 'package:dio/dio.dart';
+import 'package:app_with_apps/exports.dart';
 
 final dio = Dio();
 

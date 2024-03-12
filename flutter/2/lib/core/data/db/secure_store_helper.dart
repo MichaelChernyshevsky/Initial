@@ -1,4 +1,4 @@
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:app_with_apps/exports.dart';
 
 class SecureStorage {
   String get email => 'email';

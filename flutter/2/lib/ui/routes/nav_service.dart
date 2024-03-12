@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:app_with_apps/exports.dart';
 
 class NavigatorService {
   static GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();

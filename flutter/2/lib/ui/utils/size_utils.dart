@@ -1,5 +1,5 @@
 // ignore_for_file: deprecated_member_use, constant_identifier_names, type_annotate_public_apis, always_declare_return_types, prefer_final_locals, unnecessary_parenthesis
-import 'package:flutter/material.dart';
+import 'package:app_with_apps/exports.dart';
 
 // This is where the magic happens.
 // This functions are responsible to make UI responsive across all the mobile devices.

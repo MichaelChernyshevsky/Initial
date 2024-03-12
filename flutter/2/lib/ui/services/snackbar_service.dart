@@ -1,6 +1,5 @@
 // ignore_for_file: type_annotate_public_apis
-import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
-import 'package:flutter/material.dart';
+import 'package:app_with_apps/exports.dart';
 
 enum SnackBarType {
   notAvailibleAuth,

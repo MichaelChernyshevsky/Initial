@@ -1,6 +1,4 @@
-import 'package:app_with_apps/ui/localization/app_localization.dart';
-import 'package:app_with_apps/ui/routes/app_routes.dart';
-import 'package:flutter/material.dart';
+import 'package:app_with_apps/exports.dart';
 
 class Apps extends StatelessWidget {
   const Apps({super.key});

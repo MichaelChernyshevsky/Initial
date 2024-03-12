@@ -1,7 +1,4 @@
-import 'package:app_with_apps/ui/localization/app_localization.dart';
-import 'package:app_with_apps/manager/bloc/bloc.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:app_with_apps/exports.dart';
 
 class Screen extends StatefulWidget {
   const Screen({super.key});
